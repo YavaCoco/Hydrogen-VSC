@@ -2,7 +2,7 @@
   "name": "hydrogen-ls",
   "displayName": "Hydrogen Language Support",
   "description": "Add syntax highlighting for Hydrogen Language",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.73.0"
   },
