@@ -1,0 +1,25 @@
+{
+  "name": "hydrogen-ls",
+  "displayName": "Hydrogen Language Support",
+  "description": "Add syntax highlighting for Hydrogen Language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "hydrogen",
+      "aliases": ["Hydrogen", "hydrogen"],
+      "extensions": [".hy"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "hydrogen",
+      "scopeName": "source.hy",
+      "path": "./syntaxes/hydrogen.tmLanguage.json"
+    }]
+  }
+}

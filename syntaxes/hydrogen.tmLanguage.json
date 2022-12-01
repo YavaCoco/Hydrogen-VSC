@@ -1,0 +1,64 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Hydrogen",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"comments":{
+			"patterns": [{
+				"name": "comment.block.hydrogen",
+				"begin": "##",
+				"end": "##"
+			},
+			{
+				"name": "comment.line.hydrogen",
+				"begin": "#",
+				"end": "\n"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.hydrogen",
+				"match": "\\b(import|in|from|if|loop|break|continue|return|decl|def|namespace|struct|var|const|func)\\b"
+			},
+			{
+				"name": "storage.modifier.hydrogen",
+				"match": "\\b(global|local)\\b"
+			},
+			{
+				"name": "storage.type.hydrogen",
+				"match": "\\b(bool|char|byte|int|uint|size)\\b"
+			},
+			{
+				"name": "keyword.operator.new.hydrogen",
+				"match": "\\b(and|or|not)\\b"
+			}
+		]
+		},
+		"strings": {
+			"name": "string.quoted.double.hydrogen",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.hydrogen",
+					"match": "\\\\."
+				},
+				{
+					"name": "variable",
+					"match": "%."
+				}
+			]
+		}
+	},
+	"scopeName": "source.hy"
+}
