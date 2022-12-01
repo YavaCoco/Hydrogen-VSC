@@ -28,11 +28,11 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.hydrogen",
-				"match": "\\b(import|in|from|if|loop|break|cont|ret|decl|def|ns|struct|var|const|func|using|alias|as)\\b"
+				"match": "\\b(import|in|from|if|loop|break|cont|ret|decl|def|ns|struct|func|using|alias|as)\\b"
 			},
 			{
 				"name": "storage.modifier.hydrogen",
-				"match": "\\b(global|local)\\b"
+				"match": "\\b(global|local|opt|var|const)\\b"
 			},
 			{
 				"name": "storage.type.hydrogen",
