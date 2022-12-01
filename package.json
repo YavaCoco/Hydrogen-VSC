@@ -21,5 +21,9 @@
       "scopeName": "source.hy",
       "path": "./syntaxes/hydrogen.tmLanguage.json"
     }]
+  },
+  "publisher": "yava",
+  "repository": {
+    "url": "https://github.com/YavaCoco/Hydrogen-VSC"
   }
 }
