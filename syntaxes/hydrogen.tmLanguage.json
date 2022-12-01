@@ -28,7 +28,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.hydrogen",
-				"match": "\\b(import|in|from|if|loop|break|continue|return|decl|def|namespace|struct|var|const|func)\\b"
+				"match": "\\b(import|in|from|if|loop|break|cont|ret|decl|def|ns|struct|var|const|func|using)\\b"
 			},
 			{
 				"name": "storage.modifier.hydrogen",
